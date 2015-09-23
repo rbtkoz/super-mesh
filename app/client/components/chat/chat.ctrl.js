@@ -7,6 +7,7 @@
 
     /* @ngInject */
     function chatCtrl($scope) {
+
 //         /*jshint validthis: true */
 //         var vm = this;
 //         vm.avengers = [];

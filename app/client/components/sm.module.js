@@ -15,15 +15,15 @@
          * but this is easier to maintain.
          */ 
 
-        'sm.core',
+        //'sm.core',
 
         /*
          * Feature areas
          */
-         
-        'sm.chat',
-        'sm.map',
-        'sm.session'
+
+        'sm.chat'
+        //'sm.map',
+        //'sm.session'
     ]);
 
 })();

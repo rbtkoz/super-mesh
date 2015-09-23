@@ -1,0 +1,33 @@
+<!doctype html>
+    <html ng-app ="sm">
+        <head>
+            <script src="/socket.io/socket.io.js"></script>
+            <!-- inject css-->
+            <link href="dist/semantic.css" rel="stylesheet">
+
+            <link href="dist/css/style.min.css" rel="stylesheet">
+
+
+
+
+        </head>
+        <body>
+
+            {{message}}
+
+            <chat-module message ={{message}}></chat-module>
+
+        </body>
+        <script src="node_modules/angular/angular.js"></script>
+
+        <!-- bootstrap this-->
+        <!--<script src ="dist/js/main.js"></script>-->
+        <script src="app/client/components/sm.module.js"></script>
+
+        <!--modules-->
+        <script src="app/client/components/chat/chat.module.js"></script>
+        <script src="app/client/components/chat/chat.dir.js"></script>
+
+    </html>
+
+

@@ -7,6 +7,7 @@
 var app = require('./app/server/app');
 var debug = require('debug')('superdesk:server');
 var http = require('http');
+var io = require('./app/server/io');
 
 /**
  * Get port from environment and store in Express.
@@ -21,9 +22,18 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+io.attach(server);
+
 /**
  * Listen on provided port, on all network interfaces.
  */
+
+//start socket io
+var createApplication = function () {
+  var app = require('./app');
+  server.on('request', app); // Attach the Express application.
+  require('./io')(server);   // Attach socket.io.
+};
 
 server.listen(port);
 server.on('error', onError);
