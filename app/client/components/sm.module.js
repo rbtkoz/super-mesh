@@ -29,6 +29,6 @@
         'sm.signup',
         'sm.event',
         'sm.signin'
-    ]);
+    ])
 
 })();
