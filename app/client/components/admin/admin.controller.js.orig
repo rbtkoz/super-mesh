@@ -6,7 +6,11 @@
 
 		AdminController.$inject = ['$scope','$rootScope','AdminFactory', '$firebaseObject','$firebaseArray','FIREBASE_URI'];
 
+<<<<<<< HEAD
+		function AdminController($scope ,$rootScope, AdminFactory, $firebaseObject, $firebaseArray, FIREBASE_URI){
+=======
 		function AdminController($scope, $rootScope, AdminFactory, $firebaseObject, $firebaseArray, FIREBASE_URI){
+>>>>>>> 2d81aa28e3a7fe6e2ec11cbd55eddd25333a085e
 			var eventRef = new Firebase(FIREBASE_URI + 'Session');
 
             //instatiate session object and add to $scope
