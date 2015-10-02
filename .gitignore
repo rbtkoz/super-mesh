@@ -4,7 +4,7 @@ npm-debug.log
 .idea/
 .idea/*
 
-dist/js/main.js
-dist/css/style.min.css
-
-app/server/routes/configure/private.config.js
+#dist/js/main.js
+#dist/css/style.min.css
+#
+#app/server/routes/configure/private.config.js
