@@ -1,7 +1,7 @@
 (function(){
 
 	angular
-		.module('sm.admin')
+		.module('sm.adminCreate')
 		.run(appRun);
 
 		function appRun(routerHelper){
@@ -11,12 +11,11 @@
 		function getStates(){
 			return [
 				{
-					state: 'ideas',
+					state: 'admincreate',
 					config: {
-						url: '/ideas',
-						controller: 'AdminController',
-						templateUrl: 'client/components/admin/admin.html',
-						authenticate: true
+						url: '/',
+						controller: 'AdminCreateController',
+						templateUrl: 'client/components/admin/create/admin.create.html'
 					}
 				}
 			]
