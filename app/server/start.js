@@ -8,6 +8,6 @@ var server = require('http').createServer();
 server.on('request', app); // Attach the Express Application
 
 var port = 7777;
-server.listen(port, function() {
+server.listen(process.env.PORT || port, function() {
     console.log(chalk.blue('Server started on port', chalk.magenta(port)));
 });
